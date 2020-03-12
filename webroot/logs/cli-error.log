@@ -1,0 +1,248 @@
+2020-02-11 17:28:50 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sigmadmin.users' doesn't exist in C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 142
+Stack Trace:
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:100
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php:84
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\ORM\Table.php:501
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\ORM\Table.php:641
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:199
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:122
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:98
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:81
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\AllCommand.php:93
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\BaseCommand.php:175
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:171
+- C:\Xampp\htdocs\SigmAdmin\bin\cake.php:12
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sigmadmin.users' doesn't exist in C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 40
+Stack Trace:
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php:40
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:349
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:69
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:352
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:301
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:69
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:305
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:140
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:100
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php:84
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\ORM\Table.php:501
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\ORM\Table.php:641
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:199
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:122
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:98
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:81
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\AllCommand.php:93
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\BaseCommand.php:175
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:171
+- C:\Xampp\htdocs\SigmAdmin\bin\cake.php:12
+
+
+
+2020-02-11 17:36:49 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sigmadmin.users' doesn't exist in C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 142
+Stack Trace:
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:100
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php:84
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\ORM\Table.php:501
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\ORM\Table.php:641
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:199
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:122
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:98
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:81
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\AllCommand.php:93
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\BaseCommand.php:175
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:171
+- C:\Xampp\htdocs\SigmAdmin\bin\cake.php:12
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sigmadmin.users' doesn't exist in C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 40
+Stack Trace:
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php:40
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:349
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:69
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:352
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:301
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:69
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:305
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:140
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:100
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php:84
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\ORM\Table.php:501
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\ORM\Table.php:641
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:199
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:122
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:98
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:81
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\AllCommand.php:93
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\BaseCommand.php:175
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:171
+- C:\Xampp\htdocs\SigmAdmin\bin\cake.php:12
+
+
+
+2020-02-13 17:29:51 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1932 Table 'sigmadmin.users' doesn't exist in engine in C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 142
+Stack Trace:
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:100
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php:84
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\ORM\Table.php:501
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:303
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:200
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:122
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:98
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:81
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\BaseCommand.php:175
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:171
+- C:\Xampp\htdocs\SigmAdmin\bin\cake.php:12
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1932 Table 'sigmadmin.users' doesn't exist in engine in C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 40
+Stack Trace:
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php:40
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:349
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:69
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:352
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:301
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:69
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:305
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:140
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:100
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php:84
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\ORM\Table.php:501
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:303
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:200
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:122
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:98
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:81
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\BaseCommand.php:175
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:171
+- C:\Xampp\htdocs\SigmAdmin\bin\cake.php:12
+
+
+
+2020-02-13 18:13:25 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1932 Table 'sigmadmin.users' doesn't exist in engine in C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 142
+Stack Trace:
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:100
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php:84
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\ORM\Table.php:501
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:303
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:200
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:122
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:98
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:81
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\BaseCommand.php:175
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:171
+- C:\Xampp\htdocs\SigmAdmin\bin\cake.php:12
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1932 Table 'sigmadmin.users' doesn't exist in engine in C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 40
+Stack Trace:
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php:40
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:349
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:69
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:352
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:301
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:69
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:305
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:140
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:100
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php:84
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\ORM\Table.php:501
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:303
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:200
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:122
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:98
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:81
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\BaseCommand.php:175
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:171
+- C:\Xampp\htdocs\SigmAdmin\bin\cake.php:12
+
+
+
+2020-02-13 18:14:41 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1932 Table 'sigmadmin.tags' doesn't exist in engine in C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 142
+Stack Trace:
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:100
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php:84
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\ORM\Table.php:501
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\ORM\Table.php:641
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:199
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:122
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:98
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:81
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\AllCommand.php:93
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\BaseCommand.php:175
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:171
+- C:\Xampp\htdocs\SigmAdmin\bin\cake.php:12
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1932 Table 'sigmadmin.tags' doesn't exist in engine in C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 40
+Stack Trace:
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php:40
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:349
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:69
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:352
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:301
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:69
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:305
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:140
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:100
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php:84
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\ORM\Table.php:501
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\ORM\Table.php:641
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:199
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:122
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:98
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:81
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\AllCommand.php:93
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\BaseCommand.php:175
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:171
+- C:\Xampp\htdocs\SigmAdmin\bin\cake.php:12
+
+
+
+2020-02-17 20:32:30 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sigmadmin.informacion_usuario' doesn't exist in C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 142
+Stack Trace:
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:100
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php:84
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\ORM\Table.php:501
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\ORM\Table.php:641
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:199
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:122
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:98
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:81
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\AllCommand.php:93
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\BaseCommand.php:175
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:171
+- C:\Xampp\htdocs\SigmAdmin\bin\cake.php:12
+
+Caused by: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sigmadmin.informacion_usuario' doesn't exist in C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 40
+Stack Trace:
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php:40
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:349
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:69
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:352
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:301
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php:69
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Connection.php:305
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:140
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\Collection.php:100
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php:84
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\ORM\Table.php:501
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\ORM\Table.php:641
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:199
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:122
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:98
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\ModelCommand.php:81
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\bake\src\Command\AllCommand.php:93
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\BaseCommand.php:175
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:336
+- C:\Xampp\htdocs\SigmAdmin\vendor\cakephp\cakephp\src\Console\CommandRunner.php:171
+- C:\Xampp\htdocs\SigmAdmin\bin\cake.php:12
+
+
+
