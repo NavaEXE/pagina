@@ -40,16 +40,13 @@
 
     <div style="color:white" class="middle-box text-center loginscreen animated fadeInDown">
         <div>
-            <div>
+         
 
-                <h1 class="logo-name"><img style="width: 260px;" class="img" src="/webroot/img/newlogo.png"     alt=""></h1>
+               <img style="width: 260px;" class="img" src="/webroot/img/newlogo.png"  alt="">
 
-            </div>
+            
    
             <h3 style="font-size:26px">Bienvenido</h3>
-            <p>Es necesario contar con un usuario y contraseña para acceder a nuestro servicio.
-                <!--Continually expanded and constantly improved Inspinia Admin Them (IN+)-->
-            </p>
             <p>Iniciar Sesion</p>
 
 <div class="users form">
