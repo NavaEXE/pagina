@@ -40,7 +40,7 @@ return [
         'driver' => 'Cake\Database\Driver\Mysql',
         'persistent' => false,
         'host' => 'localhost',
-        'username' => 'root',
+        'username' => 'u712730026_nava',
         'password' => '',
         'database' => 'sigmadmin',
         'encoding' => 'utf8mb4',
