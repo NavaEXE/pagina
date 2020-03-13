@@ -10,7 +10,17 @@ $query = $contactos->find();
 
 
              ?>
-          
+              <style>
+td, th {
+    border-bottom: 0.1rem solid #e1e1e1;
+    padding: 1.2rem 1rem !important;
+    text-align: left;
+}
+             
+                      
+                 
+                  
+                </style>
                       
                     <div class="col-sm-12">
                     <div class="form-1-2">
@@ -18,7 +28,7 @@ $query = $contactos->find();
                         <div class="ibox-content">
                              <div class="input-group">
                               
-                                <input autocomplete="off" type="text" placeholder="Buscar"  id="autocomplete" class="input form-control caja" name="caja"><i style="margin-top:12px;margin-left:-25px" class="fa fa-search"></i>
+                                <input autocomplete="off" type="text" placeholder="Buscar"  id="autocomplete" class="typeahead_3 form-control caja" name="caja"><i style="margin-top:12px;margin-left:-25px" class="fa fa-search"></i>
                        
                               
                             </div>
@@ -59,10 +69,7 @@ $query = $contactos->find();
                 $equipo=utf8_encode($row['nombre']);
                 $equipo2=utf8_encode($row['apellido_paterno']);
                 $equipo3=utf8_encode($row['apellido_materno']);
-                $equipo4=utf8_encode($row['titulo']);
-                $equipo5=utf8_encode($row['celular']);
-                $equipo6=utf8_encode($row['telefono']);
-                array_push($array,$equipo,$equipo2,$equipo3,$equipo4,$equipo5);
+                array_push($array,$equipo,$equipo2,$equipo3);
               
                         ?> 
                                     
@@ -91,14 +98,16 @@ $query = $contactos->find();
 
 <script src="/webroot/external/jquery/jquery.js"></script>
 <script src="/webroot/js/jquery-ui.js"></script>
+    <script src="/webroot/js/plugins/typehead/bootstrap3-typeahead.min.js"></script>
+
 
 <script>
 var tags = <?= json_encode($array)?>
 
-    
-    
-    
-$( "#autocomplete" ).autocomplete({
+
+$('.typeahead_3').typeahead({
+    minLength: 2,
+
   source: tags,
 });
 </script>

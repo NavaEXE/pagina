@@ -37,7 +37,7 @@ class ContactosController extends AppController
          }
     
    
-    
+
     
     /**
      * Index method
@@ -56,8 +56,11 @@ class ContactosController extends AppController
             move_uploaded_file($imagen['imagen']['tmp_name'],$ruta);
             $contacto = $this->Contactos->patchEntity($contacto, $this->request->getData());
             $contacto->url_imagen='/webroot/img/contactos/'.$imagen['imagen']['name'];
+            $contacto->status = "1";
+
+            
             if ($this->Contactos->save($contacto)) {
-                $this->Flash->success(__('The contacto has been save¿.'));
+                $this->Flash->success(__('El contacto ha sido guardado correctamente.'));
 
                 return $this->redirect(['action' => 'contactos']);
             }
@@ -84,6 +87,7 @@ class ContactosController extends AppController
     
     public function ver_contacto(){
         $this->Authorization->skipAuthorization();
+      
          $id=base64_decode($_REQUEST['var']);
         $row =  $this->Contactos->get($id, [
             'contain' => [],
@@ -102,7 +106,7 @@ class ContactosController extends AppController
             $contacto = $this->Contactos->patchEntity($contacto, $this->request->getData());
             $contacto->url_imagen='/webroot/img/contactos/'.$imagen['imagen']['name'];
             $contacto->id=$id;
-            $contacto->status = "1";
+            $contacto->status = 1;
             if($contacto['url_imagen']=="/webroot/img/contactos/"){
                 
                 $contacto->url_imagen=$url;
@@ -119,7 +123,7 @@ class ContactosController extends AppController
     }
 
     /**
-     * Add method
+     * Add method   
      *
      * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
      */
@@ -127,7 +131,7 @@ class ContactosController extends AppController
     {
         $this->Authorization->skipAuthorization();
         $contacto = $this->Contactos->newEmptyEntity();
- 
+        
         if ($this->request->is('post')) {
             $imagen=$_FILES;
             $ruta=$_SERVER['DOCUMENT_ROOT'].'/webroot/img/contactos/'.$imagen['imagen']['name'];

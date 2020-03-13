@@ -35,7 +35,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
     
-
     <link href="/webroot/css/bootstrap.min.css" rel="stylesheet">
     <link href="/webroot/font-awesome/css/font-awesome.css" rel="stylesheet">
     <link href="/webroot/css/plugins/iCheck/custom.css" rel="stylesheet">

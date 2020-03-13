@@ -1,6 +1,6 @@
 $(document).ready(function(){
     
-    $('#autocomplete').focus() 
+    $('.typeahead_3').focus() 
     
     $('#autocomplete').on('keyup',function(){
         var search = $('#autocomplete').val()

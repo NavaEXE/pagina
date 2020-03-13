@@ -23,11 +23,13 @@ use Cake\Datasource\ConnectionManager;
                         <td class='client-avatar'>
                         
                         <img alt='image' src='".$imagen."'> </td>
-                                                    <td><a target='_blanck'  class='client-link'>".$row['nombre'].$row['apellido_paterno'].$row['apellido_materno']."</a></td>
-                                                 
-                                                    <td class='contact-type'><i class='fa fa-envelope'></i></td>
-                                                    <td>".$row['email']."</td>
-                                                    <td class='client-status'><a href='/directorio/contactos/contacto?var=".base64_encode($row['id'])."' style='color: white;' class='btn btn-primary'>ir</a></td>
+                                           
+                                                  <td class='client-status'><a style='color:black' href='/directorio/contactos/contacto?var=".base64_encode($row['id'])."'  class=''>".$row['nombre'].$row['apellido_paterno'].$row['apellido_materno']."</a></td>  
+                                                    <td class='contact-type'><i style='font-size: 20px;' class='fa fa-mobile'></i></td>
+                                                    <td>".$row['telefono']."</td>
+                                                      <td class='contact-type'><i style='font-size: 20px;' class='fa fa-phone'></i></td>
+                                                    <td>".$row['celular']."</td>
+                                            
                                                 </tr>";
                     
                 }

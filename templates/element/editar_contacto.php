@@ -129,23 +129,12 @@ $query = $contactos->find();
                                     </div> 
                                     <div class="col-sm-4"><input value="<?php echo $row['apellido_paterno']?>" type="text" placeholder="Apellido Paterno" class="form-control required" name="apellido_paterno" >
                                     </div>
-                                    <div class="col-sm-4"><input value="<?php echo $row['apellido_materno']?>" type="text" placeholder="Apellido Materno" class="form-control required" name="apellido_materno" ></div>    
+                                    <div class="col-sm-4"><input value="<?php echo $row['apellido_materno']?>" type="text" placeholder="Apellido Materno" class="form-control" name="apellido_materno" ></div>    
                                       
                                      
                                <div class="col-sm-4">
-                                       <select name="titulo" style="height: auto;font-size: 16px;" class="form-control m-b">
-                                        <option selected>Titulo</option>
-                                        <option value="Ingeniero">Ingeniero</option>
-                                        <option value="Doctor">Doctor</option>
-                                        <option value="Licenciado">Licenciado</option>
-                                        <option value="Profesor">Profesor</option>
-                                        <option value="Señor">Señor</option>
-                                        <option value="Señora">Señora</option>
-                                        <option value="Quimico">Quimico</option>
-                                        <option value="Encargado">Encargado</option>
-                                        <option value="Soporte">Soporte</option>
-                                        <option value="Desarrollo">Desarrollo</option>
-                                    </select>  </div>
+                                   <input value="<?php echo $row['titulo']?>" type="text" placeholder="Titulo" class="form-control" name="titulo" >
+                                         </div>
                                         
                       
                                     <div  class="col-sm-4">
@@ -191,7 +180,7 @@ $query = $contactos->find();
                                     <input value="<?php echo $row['codigo_postal']?>" style="width: 20%;float: left;" type="text" class="form-control" name="codigo_postal" placeholder="Cod. Postal" >
                                     <input value="<?php echo $row['municipio']?>" style="width: 27%;float:left;margin-left:2%;"type="text" class="form-control" name="municipio" placeholder="Ciudad/municipio" >
                                     <input value="<?php echo $row['estado']?>" style="width: 26%;float: left;margin-left: 2%;" type="text" class="form-control" name="estado" placeholder="Estado" >
-                                    <input value="<?php echo $row['pais']?>" style="width: 20%;float: left;margin-left: 2%;" type="text" class="form-control" name="pais" placeholder="Pais" >
+                                    <input value="<?php echo $row['pais']?>" style="width: 20%;float: left;margin-left: 2%;" type="text" class="form-control" name="pais" placeholder="Pais" disabled >
                                     </div>
                                 </div>
                                 
@@ -247,30 +236,7 @@ $query = $contactos->find();
 
 
 
-    <script>
-        $(document).ready(function(){
-        
-            $("#wizard").steps();
-            $("#form").steps({
-                bodyTag: "fieldset",
-         
-              
-                onFinished: function (event, currentIndex)
-                {
-                    var form = $(this);
 
-                    // Submit form input
-                    form.submit();
-                }
-            }).validate({
-                        errorPlacement: function (error, element)
-                        {
-                            element.before(error);
-                        }
-                    });
-       });
-    </script>
-    
    
   
  

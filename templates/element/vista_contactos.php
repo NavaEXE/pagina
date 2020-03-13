@@ -169,13 +169,13 @@ $query = $contactos->find();
                                     </div> 
                                     <div class=""><h3><?php echo $row['apellido_paterno']?> </h3>
                                     </div>
-                                    <div class=""><h3><?php echo $row['apellido_materno']?> </h3>
+                                    <div class=""><?php if($row['apellido_materno']!=null){ ?><h3><?php echo $row['apellido_materno']?> </h3><?php }else{ ?><h3>n/a</h3><?php }?>
                                     </div>    
-                                    <div class=""><h3><?php echo $row['titulo']?> </h3>
+                                    <div class=""><?php if($row['titulo']!=null){ ?><h3><?php echo $row['titulo']?> </h3><?php }else{ ?><h3>n/a</h3><?php }?>
                                     </div>  
-                                    <div class=""><h3><?php echo $row['rfc']?> </h3>
+                                    <div class=""><?php if($row['rfc']!=null){ ?><h3><?php echo $row['rfc']?> </h3><?php }else{ ?><h3>n/a</h3><?php }?>
                                     </div>    
-                                    <div class=""><h3><?php echo $row['curp']?> </h3>
+                                    <div class=""><?php if($row['curp']!=null){ ?><h3><?php echo $row['curp']?> </h3><?php }else{ ?><h3>n/a</h3><?php }?>
                                     </div>      
                                      </div>    
                                  </div>
@@ -216,12 +216,13 @@ $query = $contactos->find();
                 
                              <div style="border-left-style: outset;" > 
                                <div style="margin-left:6px">
-                                  <div class=""><h3><?php echo $row['email']?> </h3>
+                                  <div class=""><?php if($row['email']!=null){ ?><h3><?php echo $row['email']?> </h3><?php }else{ ?><h3>n/a</h3><?php }?>
                                     </div>
-                                     <div class=""><h3><?php echo $row['telefono']?></h3>
+                                     <div class=""><?php if($row['telefono']!=null){ ?><h3><?php echo $row['telefono']?> </h3><?php }else{ ?><h3>n/a</h3><?php }?>
                                     </div>  
-                                    <div class=""><h3><?php echo $row['celular']?></h3>
-                                    </div> 
+                                    <div class=""><?php if($row['celular']!=null){ ?><h3><?php echo $row['celular']?> </h3><?php }else{ ?><h3>n/a</h3><?php }?>
+                                    </div>
+                                     
                                 <div class="">
                                     <h3><?php echo $row['calle']?> <?php echo $row['numero_externo']?> <?php echo $row['numero_interno']?> <?php echo $row['colonia']?>  </h3>
                                     </div>   

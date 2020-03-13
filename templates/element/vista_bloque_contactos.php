@@ -35,21 +35,48 @@ $query = $contactos->find();
 
                        
                         <h3 class="m-b-xs"><strong><?php echo $row['nombre']?> <?php echo $row['apellido_paterno']?> <?php echo $row['apellido_materno']?></strong></h3>
-                        <div class="font-bold"><?php echo $row['titulo']?></div>
+                        <div class="font-bold"><?php
+                            if($row['titulo']==null){
+                                
+                                echo "Titulo: Sin ingresar";
+                            }else {
+                                
+                                 echo $row['titulo'];
+                            }
+                            
+                           ?></div>
                         <address class="m-t-md">
-                            <strong><?php echo $row['email']?></strong><br>
-                            <?php echo $row['calle']?>, #<?php echo $row['numero_externo']?><br>
-                            <?php echo $row['municipio']?> <?php echo $row['estado']?>, CP. <?php echo $row['codigo_postal'];?><br>
-                            <abbr title="Telefono">Tel. Oficina. </abbr><?php echo $row['telefono']?>&nbsp   &nbsp    
-                             <abbr title="celular">Cel. </abbr><?php echo $row['celular']?>
+                            <strong><?php
+                        if($row['email']=null){
+                            
+                            echo "Email no ingresado";
+                        }else {
+                            
+                              echo $row['email'];
+                        }
+                        ?></strong>
+                           <br>
+                            <?php if($row['calle']!=null){
+                        
+                            echo $row['calle']?>, <?php echo "#";echo $row['numero_externo']?><br>
+                            Col. <?php echo $row['colonia'];?>
+                            <br>
+                            <?php echo $row['municipio']?> <?php echo $row['estado']?><?php if($row['codigo_postal']!=null){echo ", Cod. P  ostal. ";echo $row['codigo_postal'];}else{} }else{   ?> <br><br><?php }?>
+                            <br>
+                            <?php if($row['telefono']!=null){ ?>
+                            <abbr title="Telefono">Tel. </abbr><?php echo $row['telefono']?>&nbsp&nbsp    
+                            <?php } ?>
+                              <?php if($row['celular']!=null){ ?>
+                            <abbr title="Celular">Cel. </abbr><?php echo $row['celular']?>&nbsp&nbsp    
+                            <?php } ?>
                         </address>
 
                     </a>
                     <div class="contact-box-footer">
                         <div class="m-t-xs btn-group">
-                            <a href=""  class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
-                            <a href=""  class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
-                            <a href=""  class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Follow</a>
+                            <a style="font-size: 15px;" href=""  class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
+                            <a style="font-size: 15px;" href=""  class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
+                            <a style="font-size: 15px;" href=""  class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Follow</a>
                         </div>
                     </div>
 
@@ -69,26 +96,7 @@ button .botonclose:hover{color:#fff}
       
 
   
-<!-- Modal / Ventana / Overlay en HTML -->
-<div id="victorModal" class="modal fade">
-    <div class="modal-dialog" style="max-width: 1034px !important;
-    margin: 21.75rem auto">
-        <div class="modal-content">
-            <div class="modal-header">
-               <h4 class="modal-title">Agregar Nuevo Contacto</h4>
-                <button style="color: #000;width: 55px;height: 34px;margin-left: 0px;" type="button" class="btn btn-danger close" data-dismiss="modal" aria-hidden="true">
-                    <h1 style="margin-left: -9px;margin-top: -11px;width: 55px;height: 48px;" class="botonclose">&times;</h1>
-                </button>
-            </div>
-            <div>
 
-               <?php
-                echo $this->element('agregar_contacto');
 
-              ?>
-            </div>
-           
-        </div>
-    </div>
-</div>
 
+    

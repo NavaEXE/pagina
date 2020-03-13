@@ -107,3 +107,49 @@ foreach ($query as $row) {
     </script> 
 
         <script src="/webroot/js/search.js"></script>
+        <!-- Modal / Ventana / Overlay en HTML -->
+<div id="victorModal" class="modal fade">
+    <div class="modal-dialog" style="max-width: 1034px !important;
+    margin: 21.75rem auto">
+        <div class="modal-content">
+            <div class="modal-header">
+               <h4 class="modal-title">Agregar Nuevo Contacto</h4>
+                <button style="color: #000;width: 55px;height: 34px;margin-left: 0px;" type="button" class="btn btn-danger close" data-dismiss="modal" aria-hidden="true">
+                    <h1 style="margin-left: -9px;margin-top: -11px;width: 55px;height: 48px;" class="botonclose">&times;</h1>
+                </button>
+            </div>
+            <div>
+
+               <?php
+                echo $this->element('agregar_contacto');
+
+              ?>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+    <script>
+        $(document).ready(function(){
+    
+            $("#wizard").steps();
+            $("#form").steps({
+                bodyTag: "fieldset",
+         
+              
+                onFinished: function (event, currentIndex)
+                {
+                    var form = $(this);
+
+                    // Submit form input
+                    form.submit();
+                }
+            }).validate({
+                        errorPlacement: function (error, element)
+                        {
+                            element.before(error);
+                        }
+                    });
+       });
+    </script>

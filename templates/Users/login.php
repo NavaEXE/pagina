@@ -47,6 +47,9 @@
             
    
             <h3 style="font-size:26px">Bienvenido</h3>
+            <p>Es necesario contar con un usuario y contraseña para acceder a nuestro servicio.
+                <!--Continually expanded and constantly improved Inspinia Admin Them (IN+)-->
+            </p>
             <p>Iniciar Sesion</p>
 
 <div class="users form">
