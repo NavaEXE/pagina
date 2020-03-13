@@ -42,7 +42,7 @@
         <div>
             <div>
 
-                <h1 class="logo-name"><img style="width: 360px;" class="img" src="/webroot/img/newlogo.png"     alt=""></h1>
+                <h1 class="logo-name"><img style="width: 260px;" class="img" src="/webroot/img/newlogo.png"     alt=""></h1>
 
             </div>
    
