@@ -25,7 +25,7 @@ return [
      *   You should treat it as extremely sensitive data.
      */
     'Security' => [
-        'salt' => env('SECURITY_SALT', '2b15cab2b801b003b95d67dc5905267601a20936b251c673bf5e882da2f7e163'),
+        'salt' => env('SECURITY_SALT', 'f91dfc1619715909fc4a6f61b62e421452d7668be154660526efdc58e4961aff'),
     ],
 
     /*
@@ -35,30 +35,18 @@ return [
      * See app.php for more configuration options.
      */
     'Datasources' => [
-        'default' => [
-            'host' => 'localhost',
-            /*
-             * CakePHP will use the default DB port based on the driver selected
-             * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
-             * the following line and set the port accordingly
-             */
-            //'port' => 'non_standard_port_number',
-
-            'username' => 'my_app',
-            'password' => 'secret',
-
-            'database' => 'my_app',
-            /**
-             * If not using the default 'public' schema with the PostgreSQL driver
-             * set it here.
-             */
-            //'schema' => 'myapp',
-
-            /**
-             * You can use a DSN string to set the entire configuration
-             */
-            'url' => env('DATABASE_URL', null),
-        ],
+         'default' => [
+        'className' => 'Cake\Database\Connection',
+        'driver' => 'Cake\Database\Driver\Mysql',
+        'persistent' => false,
+        'host' => 'localhost',
+        'username' => 'u712730026_nava',
+        'password' => 'nava23CDB',
+        'database' => 'u712730026_paginaweb',
+        'encoding' => 'utf8mb4',
+        'timezone' => 'UTC',
+        'cacheMetadata' => true,
+    ],
 
         /*
          * The test connection is used during the test suite.
@@ -71,6 +59,8 @@ return [
             'database' => 'test_myapp',
             //'schema' => 'myapp',
         ],
+        
+        
     ],
 
     /*
