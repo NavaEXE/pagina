@@ -74,9 +74,9 @@ $query = $contactos->find();
                     </a>
                     <div class="contact-box-footer">
                         <div class="m-t-xs btn-group">
-                            <a style="font-size: 15px;" href=""  class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
+                            <a style="font-size: 15px;" href="#victorModal4" data-toggle="modal"  class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
                             <a style="font-size: 15px;" href=""  class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
-                            <a style="font-size: 15px;" href=""  class="btn btn-xs btn-white"><i class="fa fa-user-plus"></i> Follow</a>
+                            <a style="font-size: 15px;" href=""  class="btn btn-xs btn-white"><i class="fa fa-pencil"></i> Edit</a>
                         </div>
                     </div>
 
@@ -97,6 +97,27 @@ button .botonclose:hover{color:#fff}
 
   
 
+                             
+ <!-- Modal / Ventana / Overlay en HTML -->
+<div id="victorModal4" class="modal fade">
+    <div class="modal-dialog" style="max-width: 1034px !important;
+    margin: 21.75rem auto">
+        <div class="modal-content">
+            <div class="modal-header">
+               <h4 class="modal-title">Editar Contacto</h4>
+                <button style="color: #000;width: 55px;height: 34px;margin-left: 0px;" type="button" class="btn btn-danger close" data-dismiss="modal" aria-hidden="true">
+                    <h1 style="margin-left: -9px;margin-top: -11px;width: 55px;height: 48px;" class="botonclose">&times;</h1>
+                </button>
+            </div>
+            <div>
 
+               <?php
+                echo $this->element('llamadas');
+              ?>
+            </div>
+           
+        </div>
+    </div>
+</div>
 
     

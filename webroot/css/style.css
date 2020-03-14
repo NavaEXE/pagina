@@ -9573,3 +9573,10 @@ body.md-skin {
 }
 
 
+@media screen and (max-width: 375px){
+    
+   .wrapper-content {
+        
+        padding: 304px 11px 117px !important;
+    }
+}
