@@ -66,7 +66,7 @@ foreach ($query as $row) {
  
      <div id="page-wrapper" class="gray-bg">
         <div class="row border-bottom">
-        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0; position: fixed; z-index: 999;width:88%">
+        <nav class="menu-global navbar navbar-static-top" role="navigation" style="margin-bottom: 0; position: fixed; z-index: 999;width:88%">
         <div class="navbar-header">
             <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
             <form role="search" class="navbar-form-custom" action="search_results.html">
@@ -77,7 +77,7 @@ foreach ($query as $row) {
         </div>
             <ul class="nav navbar-top-links navbar-right">
                 <li>
-                    <img style="width: 170px;margin-left:5px" src="/webroot/img/newlogo2.png" alt="">
+                    <img class="menu-img" style="width: 170px;margin-left:5px" src="/webroot/img/newlogo2.png" alt="">
                 </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">

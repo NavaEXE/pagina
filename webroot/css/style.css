@@ -11,6 +11,52 @@
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg') format('svg');
 }
+
+
+
+@media screen and (max-width: 1920px){
+    
+.gray-bg1{
+    
+    margin-top:-900px !important;
+}
+    
+}
+@media screen and (max-width: 360px){
+    .gray-bg1 {
+    margin-top: -567px !important;
+    }
+    .ibox{
+        
+        width: 110%;
+    }
+   .contact{
+        
+        padding: 325px 10px 40px !important;
+    }
+    .menu-img{
+        
+        display: none;
+    }
+    .menu-global{
+        
+        width: 100% !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .glyphicon {
   position: relative;
   top: 1px;
@@ -6449,10 +6495,7 @@ table.issue-tracker tbody tr td {
 }
 
 
-.gray-bg1{
-    
-    margin-top:-900px !important;
-}
+
 
 .agile-list li.warning-element {
   border-left: 3px solid #f8ac59;
@@ -9522,6 +9565,10 @@ body.md-skin {
     background-color: #f3f3f4;
   }
 }
+
+
+
+
 @media (max-width: 350px) {
   .timeline-item .date {
     text-align: left;
@@ -9573,10 +9620,3 @@ body.md-skin {
 }
 
 
-@media screen and (max-width: 375px){
-    
-   .wrapper-content {
-        
-        padding: 304px 11px 117px !important;
-    }
-}

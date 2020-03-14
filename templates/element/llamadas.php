@@ -1,8 +1,5 @@
 <style>
-    a{
-        
-        margin-left:12px;
-    }
+
 </style>
 
 <div>

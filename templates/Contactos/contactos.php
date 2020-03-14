@@ -15,7 +15,7 @@ foreach ($query as $row) {
 
              ?>
              
-    <div style="margin-top:-5px" id="page-wrapper" class="gray-bg1 gray-bg">
+    <div style="margin-top:-5px" id="page-wrapper" class="contac gray-bg1 gray-bg">
         <div  style="padding: 0px 10px 40px;" class="wrapper wrapper-content  animated fadeInRight">
             <div class="row">
                 <div id="tamaño" class="col-sm-12">
