@@ -1,7 +1,7 @@
 <?php $user = $this->request->getAttribute('identity'); ?>
         <div id="page-wrapper" class="gray-bg1 gray-bg">
-        <div class="wrapper wrapper-content">
-        <div class="row">
+        <div class="wrapper wrapper-content add_bloque_notes">
+        <div class="row add_notes">
 
             <div class="col-lg-12 animated fadeInRight">
             <div class="mail-box-header">
@@ -44,8 +44,8 @@
 
                         </textarea>
                          <div class="mail-body text-right tooltip-demo">
-                        <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-save"></i> Guardar</button>
-                        <a href="home" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Discard email"><i class="fa fa-times"></i> Cancelar</a>
+                        <button type="submit" class="btn btn-sm btn-primary add-boton"><i class="fa fa-save"></i> Guardar</button>
+                        <button href="home" class="btn btn-danger btn-sm add-boton" data-toggle="tooltip" data-placement="top" title="Discard email"><i class="fa fa-times"></i> Cancelar</button>
                     </div>
                         </form>
 

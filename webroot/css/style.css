@@ -22,6 +22,36 @@
 }
     
 }
+
+
+@media screen and (max-width: 411px)
+{
+      .menu-img{
+        
+        display: none;
+    }
+        .menu-global{
+        
+        width: 100% !important;
+    }
+      .contac{
+        
+        padding: 0px 10px 40px !important;
+    }
+       .page-heading{
+        
+        width: 109%;
+    }
+        .ibox{
+        
+        width: 109%;
+    }
+        .gray-bg1 {
+    margin-top: -660px !important;
+    }
+    
+}
+
 @media screen and (max-width: 360px){
     .gray-bg1 {
     margin-top: -567px !important;
@@ -30,9 +60,9 @@
         
         width: 110%;
     }
-   .contact{
+   .contac{
         
-        padding: 325px 10px 40px !important;
+        padding: 0px 10px 40px !important;
     }
     .menu-img{
         
@@ -42,10 +72,89 @@
         
         width: 100% !important;
     }
+    .page-heading{
+        
+        width: 109%;
+    }
+    .notes li{
+        
+            margin-left: 25px !important;
+    }
+    .add_notes{
+        
+        width: auto !important;
+    }
+    .add_bloque_notes{
+        
+        padding: 0px 10px 40px !important;
+    }
+    .note-editor{
+        margin-left: -10px !important;
+        width: 107%;
+    }
+    .form-group{
+        
+        width: auto !important;
+    }
+    .add-boton{
+        
+        font-size: inherit !important;
+    }
 }
 
 
 
+
+
+@media (max-width: 350px) {
+  .timeline-item .date {
+    text-align: left;
+    width: 110px;
+    position: relative;
+    padding-top: 30px;
+  }
+  .timeline-item .date i {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    padding: 5px;
+    width: 30px;
+    text-align: center;
+    border: 1px solid #e7eaec;
+    background: #f8f8f8;
+  }
+  .timeline-item .content {
+    border-left: none;
+    border-top: 1px solid #e7eaec;
+    padding-top: 10px;
+    min-height: 100px;
+  }
+  .nav.navbar-top-links li.dropdown {
+    display: none;
+  }
+  .ibox-tools {
+    float: none;
+    text-align: left;
+    display: inline-block;
+  }
+}
+/* Only demo */
+@media (max-width: 1000px) {
+  .welcome-message {
+    display: none;
+  }
+}
+@media print {
+  nav.navbar-static-side {
+    display: none;
+  }
+  body {
+    overflow: visible !important;
+  }
+  #page-wrapper {
+    margin: 0;
+  }
+}
 
 
 
@@ -9567,56 +9676,5 @@ body.md-skin {
 }
 
 
-
-
-@media (max-width: 350px) {
-  .timeline-item .date {
-    text-align: left;
-    width: 110px;
-    position: relative;
-    padding-top: 30px;
-  }
-  .timeline-item .date i {
-    position: absolute;
-    top: 0;
-    left: 15px;
-    padding: 5px;
-    width: 30px;
-    text-align: center;
-    border: 1px solid #e7eaec;
-    background: #f8f8f8;
-  }
-  .timeline-item .content {
-    border-left: none;
-    border-top: 1px solid #e7eaec;
-    padding-top: 10px;
-    min-height: 100px;
-  }
-  .nav.navbar-top-links li.dropdown {
-    display: none;
-  }
-  .ibox-tools {
-    float: none;
-    text-align: left;
-    display: inline-block;
-  }
-}
-/* Only demo */
-@media (max-width: 1000px) {
-  .welcome-message {
-    display: none;
-  }
-}
-@media print {
-  nav.navbar-static-side {
-    display: none;
-  }
-  body {
-    overflow: visible !important;
-  }
-  #page-wrapper {
-    margin: 0;
-  }
-}
 
 
