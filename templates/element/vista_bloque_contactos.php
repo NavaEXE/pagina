@@ -16,6 +16,7 @@ $query = $contactos->find();
     
             <?php foreach ($query as $row) {
                     if($row['status']=="1"){
+                          
                         ?>
             <div class="col-lg-3">
                 <div class="contact-box center-version">
@@ -57,6 +58,7 @@ $query = $contactos->find();
                         ?></strong>
                            <br>
                             <?php if($row['calle']!=null){
+                          $_SESSION['var']=$row['celular'];
                         
                             echo $row['calle']?>, <?php echo "#";echo $row['numero_externo']?><br>
                             Col. <?php echo $row['colonia'];?>
@@ -74,7 +76,7 @@ $query = $contactos->find();
                     </a>
                     <div class="contact-box-footer">
                         <div class="m-t-xs btn-group">
-                            <a style="font-size: 15px;" href="#victorModal4" data-toggle="modal"  class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
+                            <a onclick="modalinfo(<?php echo $row['celular']?>);modalinfo2(<?php echo $row['telefono']?>)" style="font-size: 15px;" href="#" data-target="#victorModal4" data-toggle="modal"  class="btn btn-xs btn-white"><i class="fa fa-phone"></i> Call </a>
                             <a style="font-size: 15px;" href=""  class="btn btn-xs btn-white"><i class="fa fa-envelope"></i> Email</a>
                             <a style="font-size: 15px;" href=""  class="btn btn-xs btn-white"><i class="fa fa-pencil"></i> Edit</a>
                         </div>
@@ -92,10 +94,24 @@ $query = $contactos->find();
 button .botonclose:hover{color:#fff}
 </style>
         
-      
-      
-
+                <script>
+                    $('#telefono').val()
+                    
+                    go:function modalinfo($celular){
+                  
+                     window.location.href = "tel:"$celular;
+                    
+                    }
+              
+                    go2:function modelinfo2($telefono){
+                    
+                        window.location.href = "tel:"$telefono;
+                        
+                    }
+                    
+                </script>
   
+
 
                              
  <!-- Modal / Ventana / Overlay en HTML -->
@@ -110,14 +126,26 @@ button .botonclose:hover{color:#fff}
                 </button>
             </div>
             <div>
+          
+            
+        <div>
+<br>
+        <a href="tel:javascript:link.Generator.go('<?echo$pageId?>')" style="color:white;float:left" class="btn btn-primary dim btn-large-dim" type="button"><i style="font-size: 46px;margin-top: 17px;" class="fa fa-phone"></i></a><h3 id="telefono" style="font-size: 40px;
+        ">Telefono</h3><br><br>
+        <a href="tel:javascript:link.Generator.go2('<?echo$pageId?>')" style="color:white;float:left" class="btn btn-primary dim btn-large-dim" type="button"><i style="font-size: 60px;margin-top:10px" class="fa fa-mobile"></i></a><h3 style="font-size: 40px;float:left
+        ">Celular</h3>
+        </div>
+     
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-               <?php
-                echo $this->element('llamadas');
-              ?>
+             
             </div>
-           
         </div>
     </div>
 </div>
 
-    
