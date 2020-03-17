@@ -100,6 +100,21 @@
         
         font-size: inherit !important;
     }
+    .modal-dialog{
+        margin: auto !important; 
+    }
+    .add-contac{
+        
+        float: initial !important;
+    }
+    .add-tel{
+        
+        width: 82% !important;
+    }
+    .add-cel{
+        
+        width: 82% !important;
+    }
 }
 
 

@@ -83,7 +83,7 @@
 
 
              <header></header>
-    <div class="col-lg-1" style="float:left;margin-right:1%">
+    <div class="col-lg-1 add-contac" style="float:left;margin-right:1%">
                         <section id="Images" class="images-cards">
 
                                 <div class="row" >
@@ -169,11 +169,11 @@
                               <div style="float:left; margin-bottom:0px" class="form-group row">
                                     <label class="col-sm-1 col-form-label">Telefono</label>
                                     <div style="margin-right: 2%" class="col-sm-3">
-                                    <input style="width:100%" type="text" class="form-control" name="telefono" >
+                                    <input style="width:100%" type="text" class="form-control add-tel" name="telefono" >
                                     </div>
                                     <label class="col-sm-1 col-form-label">Celular</label>
 
-                                    <div class="col-sm-3"><input style="width:100%" type="text" class="form-control" name="celular" ></div>
+                                    <div class="col-sm-3"><input style="width:100%" type="text" class="form-control add-cel" name="celular" ></div>
                                 </div>
                                
                             
