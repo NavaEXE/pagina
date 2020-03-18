@@ -37,6 +37,7 @@ class ContactosFixture extends TestFixture
         'curp' => ['type' => 'string', 'length' => 18, 'null' => false, 'default' => null, 'collate' => 'utf8_spanish_ci', 'comment' => '', 'precision' => null],
         'email' => ['type' => 'string', 'length' => 320, 'null' => true, 'default' => null, 'collate' => 'utf8_spanish_ci', 'comment' => '', 'precision' => null],
         'status' => ['type' => 'integer', 'length' => 1, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
+        'created' => ['type' => 'datetime', 'length' => null, 'precision' => null, 'null' => true, 'default' => null, 'comment' => ''],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
         ],
@@ -75,6 +76,7 @@ class ContactosFixture extends TestFixture
                 'curp' => 'Lorem ipsum dolo',
                 'email' => 'Lorem ipsum dolor sit amet',
                 'status' => 1,
+                'created' => '2020-03-18 19:00:21',
             ],
         ];
         parent::init();

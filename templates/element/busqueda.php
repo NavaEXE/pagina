@@ -44,24 +44,12 @@ td, th {
                                 <a class="collapse-link">
                                     <i class="fa fa-chevron-up"></i>
                                 </a>
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                    <i class="fa fa-wrench"></i>
-                                </a>
-                                <ul class="dropdown-menu dropdown-user">
-                                    <li><a href="#" class="dropdown-item">Config option 1</a>
-                                    </li>
-                                    <li><a href="#" class="dropdown-item">Config option 2</a>
-                                    </li>
-                                </ul>
-                                <a class="close-link">
-                                    <i class="fa fa-times"></i>
-                                </a>
+                                           
                             </div>
                         </div>
                         <div class="ibox-content">
 
-                            <div>
-                                <div class="feed-activity-list">
+                              
                                 
          <?php  $array=array();
                 $array2=array();
@@ -73,18 +61,19 @@ td, th {
               
                         ?> 
                                     
-                                    <section id="result">
-                                        
-                                    </section>
+                                    <table class="table table-striped table-hover">
+                                        <tbody id="result"></tbody>
+                                    </table>
+                                    
                                     
                     <?php }?>
                                    
 
                               
 
-                            </div>
+                            
 
-                        </div>
+                     
                     </div>
 
                 </div></div>

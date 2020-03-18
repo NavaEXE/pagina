@@ -57,7 +57,7 @@ class ContactosController extends AppController
             $contacto = $this->Contactos->patchEntity($contacto, $this->request->getData());
             $contacto->url_imagen='/webroot/img/contactos/'.$imagen['imagen']['name'];
             $contacto->status = "1";
-
+            $contacto->pais="mexico";
             
             if ($this->Contactos->save($contacto)) {
                 $this->Flash->success(__('El contacto ha sido guardado correctamente.'));

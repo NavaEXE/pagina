@@ -41,11 +41,15 @@ foreach ($query as $row) {
                             
                             
                             <div class="clients-list">
-                            <span style="font-size:12px" class="float-right small text-muted"><?php echo $numero?> Elements</span>
                             <ul class="nav nav-tabs">
                                 <li><a class="nav-link active" data-toggle="tab" href="#tab-1"><i class="fa fa-address-card-o"></i></a></li>
                                 <li><a class="nav-link" data-toggle="tab" href="#tab-2"><i class="fa fa-window-restore"></i></a></li>
                                 <li><a class="nav-link" data-toggle="tab" href="#tab-3"><i class="fa fa-list"></i></a></li>
+                                <li style="float: right;margin-left: 1173px;">  <span style="font-size:12px" class="float-right small text-muted"><?php echo $numero?> Elements</span>
+                                <select id="filtro" class="filtro" name="filtro" onchange="ShowSelected();">
+                                <option value="reciente" selected>Mas Reciente</option>
+                                <option value="antiguo">Mas Antiguo</option>
+                                </select></li>
                             
                             </ul>
                             <div style="overflow:auto" class="tab-content">
@@ -129,10 +133,23 @@ foreach ($query as $row) {
         </div>
     </div>
 </div>
+    <script type="text/javascript">
+function ShowSelected()
+{
+/* Para obtener el valor */
+var cod = document.getElementById("filtro").value;
+alert(cod);
+ 
+/* Para obtener el texto */
+var combo = document.getElementById("filtro");
+var selected = combo.options[combo.selectedIndex].text;
+alert(selected);
+}
+</script>
 
     <script>
         $(document).ready(function(){
-    
+   
             $("#wizard").steps();
             $("#form").steps({
                 bodyTag: "fieldset",
