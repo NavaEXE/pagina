@@ -1,8 +1,3 @@
-<style>
-
-</style>
- <input id="bookId" type="text">
-<?php echo $celular?>
 <div>
 <br>
 <a style="color:white;float:left" class="btn btn-primary dim btn-large-dim" type="button"><i style="font-size: 46px;margin-top: 17px;" class="fa fa-phone"></i></a><h3 style="font-size: 40px;
