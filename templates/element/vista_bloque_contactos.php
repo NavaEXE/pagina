@@ -1,23 +1,26 @@
- <?php
-            
-            
-            use Cake\ORM\TableRegistry;
+
+        <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+        
+<?php
+         
+use Cake\ORM\TableRegistry;
 
 $user = $this->request->getAttribute('identity');
 $contactos = TableRegistry::getTableLocator()->get('Contactos');
-$query = $contactos->find();    
-
+$query = $contactos->find()->order(['created' => 'DESC']);;    
 
              ?>
         
-    
-        <div class="wrapper wrapper-content animated fadeInRight">
-        <div class="row">
-    
+
+
+           
+
             <?php foreach ($query as $row) {
                     if($row['status']=="1"){
                           
                         ?>
+                       
             <div class="col-lg-3">
                 <div class="contact-box center-version">
 

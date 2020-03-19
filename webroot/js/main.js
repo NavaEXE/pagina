@@ -25,10 +25,9 @@ $('#regresar').on('click', function (e) {
 if(URLactual == "/directorio/contactos"){
    $('#menu_directorio').addClass('active');
    $('#menu_contactos').addClass('active');
-   $('#menu_directorio ul').addClass('in');
-    
-    
+   $('#menu_directorio ul').addClass('in');  
 }
+
 if(URLactual == "/directorio/clientes"){
    
      $('#menu_directorio').addClass('active');
@@ -53,6 +52,32 @@ if(URLactual == "/directorio/usuarios"){
 
 $(document).ready(function () {
     
+    
+    $('#filtro').focus() 
+    
+    $('#filtro').on('click',function(e){
+        var filtro = $('#filtro').val()
+        $.ajax({
+            type : 'POST',
+            url : '/templates/contactos/filtro',
+            data : { 'filtro': filtro },
+            })
+        .done(function(resultado){
+           
+                $('#contactos').html(resultado)
+           })
+        .fail(function(){
+               
+               alert('Hubo un error:(')
+               
+           })
+        
+        
+    })
+
+    
+    
+    
     $('.buscar').on('click',function(e){
 		$('#tamaño').removeClass('col-sm-12');
         $('#tamaño').addClass('col-sm-8');
@@ -60,6 +85,8 @@ $(document).ready(function () {
         $('#buscarvista').addClass('animated bounceInUp active');
         $('#buscarboton').addClass('menu-oculto');
         $('#cerrarbuscar').removeClass('menu-oculto');
+        $('#filtros').addClass('filtros');
+        $('#filtros').removeClass('filtros1');
 	});
     
         $('.cerrarbuscar').on('click',function(e){
@@ -69,6 +96,9 @@ $(document).ready(function () {
         $('#buscarboton').removeClass('menu-oculto');
         $('#cerrarbuscar').addClass('menu-oculto');
         $('#buscarvista').addClass('menu-oculto');
+        $('#filtros').addClass('filtros1');
+        $('#filtros').removeClass('filtros');
+        
    
 	})
         $('.caja').on('click',function(e){
@@ -129,3 +159,4 @@ $(document).ready(function () {
         };
     }
 });
+

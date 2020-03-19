@@ -7113,6 +7113,17 @@ body.body-small .vote-icon {
     transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   }
 }
+
+.filtros{
+    
+    margin-left: 600px;
+}
+.filtros1{
+    
+    margin-left: 1173px;
+}
+
+
 /*
  *  Usage:
  *

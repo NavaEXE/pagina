@@ -35,7 +35,13 @@ class ContactosController extends AppController
          $this->Authorization->skipAuthorization();
     
          }
+        public function filtros(){
+
+       
+
+         $this->Authorization->skipAuthorization();
     
+         }
    
 
     
@@ -58,7 +64,6 @@ class ContactosController extends AppController
             $contacto->url_imagen='/webroot/img/contactos/'.$imagen['imagen']['name'];
             $contacto->status = "1";
             $contacto->pais="mexico";
-            
             if ($this->Contactos->save($contacto)) {
                 $this->Flash->success(__('El contacto ha sido guardado correctamente.'));
 
@@ -107,6 +112,7 @@ class ContactosController extends AppController
             $contacto->url_imagen='/webroot/img/contactos/'.$imagen['imagen']['name'];
             $contacto->id=$id;
             $contacto->status = 1;
+               $contacto->pais="mexico";
             if($contacto['url_imagen']=="/webroot/img/contactos/"){
                 
                 $contacto->url_imagen=$url;

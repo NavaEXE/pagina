@@ -4,6 +4,7 @@ use Cake\Datasource\ConnectionManager;
 
      
         if(!isset($_POST['search'])) exit ('No se recibio el valor a buscar');
+
             
             function search(){
                 $conn = ConnectionManager::get('default');
@@ -35,4 +36,10 @@ use Cake\Datasource\ConnectionManager;
                 }
                       
             }
+
+
+
+    
+
+
 search();

@@ -25,6 +25,7 @@ Router::connect('/directorio/provedores', ['controller' => 'Directorio', 'action
 Router::connect('/directorio/usuarios', ['controller' => 'Directorio', 'action' => 'usuarios']); 
 Router::connect('/directorio/contactos/contacto', ['controller' => 'Contactos', 'action' => 'ver_contacto']); 
 Router::connect('/templates/contactos/consulta', ['controller' => 'Contactos', 'action' => 'consulta']); 
+Router::connect('/templates/contactos/filtro', ['controller' => 'Contactos', 'action' => 'filtros']); 
 //Perfil
 Router::connect('/Perfil/index', ['controller' => 'Perfil', 'action' => 'index']); 
 Router::connect('/Perfil/editar', ['controller' => 'Perfil', 'action' => 'editar']); 
