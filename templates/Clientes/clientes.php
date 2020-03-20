@@ -27,10 +27,7 @@
                                 Todos los clientes deben ser verificados antes de que pueda enviar un correo electrónico y configurar un proyecto.
                             </p>
                             <div class="input-group">
-                                <input type="text" placeholder="Search client " class="input form-control">
-                                <span class="input-group-append">
-                                        <button type="button" class="btn btn btn-primary"> <i class="fa fa-search"></i> Search</button>
-                                </span>
+                               
                             </div>
                             <div class="clients-list">
                             <span class="float-right small text-muted">1406 Elements</span>
@@ -61,126 +58,7 @@
                                                     <td><i class="fa fa-flag"></i> Angola</td>
                                                     <td class="client-status"><span class="label label-primary">Active</span></td>
                                                 </tr>
-                                                <tr>
-                                                    <td><a href="#company-2" class="client-link">Velit Industries</a></td>
-                                                    <td>Maglie</td>
-                                                    <td><i class="fa fa-flag"></i> Luxembourg</td>
-                                                    <td class="client-status"><span class="label label-primary">Active</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="#company-3" class="client-link">Art Limited</a></td>
-                                                    <td>Sooke</td>
-                                                    <td><i class="fa fa-flag"></i> Philippines</td>
-                                                    <td class="client-status"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="#company-1" class="client-link">Tempor Arcu Corp.</a></td>
-                                                    <td>Eisden</td>
-                                                    <td><i class="fa fa-flag"></i> Korea, North</td>
-                                                    <td class="client-status"><span class="label label-warning">Waiting</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="#company-2" class="client-link">Penatibus Consulting</a></td>
-                                                    <td>Tribogna</td>
-                                                    <td><i class="fa fa-flag"></i> Montserrat</td>
-                                                    <td class="client-status"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="#company-3" class="client-link"> Ultrices Incorporated</a></td>
-                                                    <td>Basingstoke</td>
-                                                    <td><i class="fa fa-flag"></i> Tunisia</td>
-                                                    <td class="client-status"><span class="label label-primary">Active</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="#company-2" class="client-link">Et Arcu Inc.</a></td>
-                                                    <td>Sioux City</td>
-                                                    <td><i class="fa fa-flag"></i> Burundi</td>
-                                                    <td class="client-status"><span class="label label-primary">Active</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="#company-1" class="client-link">Tellus Institute</a></td>
-                                                    <td>Rexton</td>
-                                                    <td><i class="fa fa-flag"></i> Angola</td>
-                                                    <td class="client-status"><span class="label label-primary">Active</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="#company-2" class="client-link">Velit Industries</a></td>
-                                                    <td>Maglie</td>
-                                                    <td><i class="fa fa-flag"></i> Luxembourg</td>
-                                                    <td class="client-status"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="#company-3" class="client-link">Art Limited</a></td>
-                                                    <td>Sooke</td>
-                                                    <td><i class="fa fa-flag"></i> Philippines</td>
-                                                    <td class="client-status"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="#company-1" class="client-link">Tempor Arcu Corp.</a></td>
-                                                    <td>Eisden</td>
-                                                    <td><i class="fa fa-flag"></i> Korea, North</td>
-                                                    <td class="client-status"><span class="label label-warning">Waiting</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="#company-2" class="client-link">Penatibus Consulting</a></td>
-                                                    <td>Tribogna</td>
-                                                    <td><i class="fa fa-flag"></i> Montserrat</td>
-                                                    <td class="client-status"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="#company-3" class="client-link"> Ultrices Incorporated</a></td>
-                                                    <td>Basingstoke</td>
-                                                    <td><i class="fa fa-flag"></i> Tunisia</td>
-                                                    <td class="client-status"><span class="label label-primary">Active</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="#company-2" class="client-link">Et Arcu Inc.</a></td>
-                                                    <td>Sioux City</td>
-                                                    <td><i class="fa fa-flag"></i> Burundi</td>
-                                                    <td class="client-status"><span class="label label-primary">Active</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="#company-1" class="client-link">Tellus Institute</a></td>
-                                                    <td>Rexton</td>
-                                                    <td><i class="fa fa-flag"></i> Angola</td>
-                                                    <td class="client-status"><span class="label label-primary">Active</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a  href="#company-2" class="client-link">Velit Industries</a></td>
-                                                    <td>Maglie</td>
-                                                    <td><i class="fa fa-flag"></i> Luxembourg</td>
-                                                    <td class="client-status"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="#company-3" class="client-link">Art Limited</a></td>
-                                                    <td>Sooke</td>
-                                                    <td><i class="fa fa-flag"></i> Philippines</td>
-                                                    <td class="client-status"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="#company-1" class="client-link">Tempor Arcu Corp.</a></td>
-                                                    <td>Eisden</td>
-                                                    <td><i class="fa fa-flag"></i> Korea, North</td>
-                                                    <td class="client-status"><span class="label label-warning">Waiting</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="#company-2" class="client-link">Penatibus Consulting</a></td>
-                                                    <td>Tribogna</td>
-                                                    <td><i class="fa fa-flag"></i> Montserrat</td>
-                                                    <td class="client-status"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="#company-3" class="client-link"> Ultrices Incorporated</a></td>
-                                                    <td>Basingstoke</td>
-                                                    <td><i class="fa fa-flag"></i> Tunisia</td>
-                                                    <td class="client-status"><span class="label label-primary">Active</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="#company-2" class="client-link">Et Arcu Inc.</a></td>
-                                                    <td>Sioux City</td>
-                                                    <td><i class="fa fa-flag"></i> Burundi</td>
-                                                    <td class="client-status"><span class="label label-primary">Active</span></td>
-                                                </tr>
+                                               
                                                 </tbody>
                                             </table>
                                         </div>
