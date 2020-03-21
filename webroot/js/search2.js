@@ -1,22 +1,22 @@
 $(document).ready(function(){
     
-    $('#autocomplete').focus() 
+    $('#autocomplete2').focus() 
     
-    $('#autocomplete').on('keyup',function(){
-        var search = $('#autocomplete').val()
+    $('#autocomplete2').on('keyup',function(){
+        var search = $('#autocomplete2').val()
            $.ajax({
             type : 'POST',
-            url : '/templates/contactos/consulta',
+            url : '/templates/clientes/consulta',
             data : { 'search': search },
             beforeSend: function(){
                 
-                $('#result').html('<img src="/webroot/img/cargando')
+                $('#result2').html('<img src="/webroot/img/cargando')
                 
             }
             })
         .done(function(resultado){
                
-               $('#result').html(resultado)
+               $('#result2').html(resultado)
                
            })
         .fail(function(){

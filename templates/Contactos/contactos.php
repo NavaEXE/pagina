@@ -21,7 +21,7 @@ foreach ($query as $row) {
                 <div id="tamaño" class="col-sm-12">
                     <div class="ibox">
                         <div class="ibox-content">
-                            <span class="text-muted small float-right">Last modification: <i class="fa fa-clock-o"></i> 2:10 pm - 12.06.2014</span>
+  
                             <h2>Contactos</h2>
                              <ol class="breadcrumb">
                         <li class="breadcrumb-item">
@@ -45,7 +45,7 @@ foreach ($query as $row) {
                                 <li><a class="nav-link active" data-toggle="tab" href="#tab-1"><i class="fa fa-address-card-o"></i></a></li>
                                 <li><a class="nav-link" data-toggle="tab" href="#tab-2"><i class="fa fa-window-restore"></i></a></li>
                                 <li><a class="nav-link" data-toggle="tab" href="#tab-3"><i class="fa fa-list"></i></a></li>
-                                <li id="filtros" class="filtros1" style="float: right;">  <span style="font-size:12px" class="float-right small text-muted"><?php echo $numero?> Elements</span>
+                                <li id="filtros" class="filtros1" style="float: right;">  <span style="font-size:12px" class="float-right small text-muted"><?php echo $numero?> Contactos</span>
                                 <select id="filtro" class="filtro" name="filtro">
                                 <option value="reciente" selected>Mas Reciente</option>
                                 <option value="antiguo">Mas Antiguo</option>
@@ -135,6 +135,7 @@ foreach ($query as $row) {
         </div>
     </div>
 </div>
+
 
 
     <script>

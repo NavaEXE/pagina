@@ -17,6 +17,7 @@ Router::connect('/escritorio/agregar', ['controller' => 'Escritorio', 'action' =
 Router::connect('/directorio/contactos', ['controller' => 'Contactos', 'action' => 'contactos']); 
 Router::connect('/directorio/contactos/agregar', ['controller' => 'Contactos', 'action' => 'agregar']); 
 Router::connect('/contactos/delete', ['controller' => 'Contactos', 'action' => 'delete']); 
+Router::connect('/clientes/delete', ['controller' => 'Clientes', 'action' => 'delete']); 
 
 
 
@@ -24,7 +25,9 @@ Router::connect('/directorio/clientes', ['controller' => 'Clientes', 'action' =>
 Router::connect('/directorio/provedores', ['controller' => 'Directorio', 'action' => 'provedores']); 
 Router::connect('/directorio/usuarios', ['controller' => 'Directorio', 'action' => 'usuarios']); 
 Router::connect('/directorio/contactos/contacto', ['controller' => 'Contactos', 'action' => 'ver_contacto']); 
+Router::connect('/directorio/clientes/cliente', ['controller' => 'Clientes', 'action' => 'ver_cliente']); 
 Router::connect('/templates/contactos/consulta', ['controller' => 'Contactos', 'action' => 'consulta']); 
+Router::connect('/templates/clientes/consulta', ['controller' => 'Clientes', 'action' => 'consulta']); 
 Router::connect('/templates/contactos/filtro', ['controller' => 'Contactos', 'action' => 'filtros']); 
 //Perfil
 Router::connect('/Perfil/index', ['controller' => 'Perfil', 'action' => 'index']); 

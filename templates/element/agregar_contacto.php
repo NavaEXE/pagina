@@ -136,7 +136,7 @@
                         </div>
                  
                         
-                    <div class="col-lg-12" style="float: left;background-color: #ffffff;color: inherit;border-top-color: #e7eaec; border-image: inherit;border-top-style: solid;border-top-width: 1px;">
+                    <div class="col-lg-12" style="float: left;background-color: #ffffff;color: inherit;border-top-color: #e7eaec; border-image: inherit;border-top-style: solid;border-top-width: 1px;    margin-top: 16px;">
                                                               
                        
                                

@@ -19,6 +19,8 @@ use Cake\Validation\Validator;
  * @method \App\Model\Entity\Cliente patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
  * @method \App\Model\Entity\Cliente[] patchEntities($entities, array $data, array $options = [])
  * @method \App\Model\Entity\Cliente findOrCreate($search, callable $callback = null, $options = [])
+ *
+ * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
 class ClientesTable extends Table
 {
@@ -35,6 +37,8 @@ class ClientesTable extends Table
         $this->setTable('clientes');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
+
+        $this->addBehavior('Timestamp');
     }
 
     /**
@@ -61,19 +65,19 @@ class ClientesTable extends Table
 
         $validator
             ->scalar('nombre')
-            ->maxLength('nombre', 25)
+            ->maxLength('nombre', 30)
             ->requirePresence('nombre', 'create')
             ->notEmptyString('nombre');
 
         $validator
             ->scalar('apellido_paterno')
-            ->maxLength('apellido_paterno', 25)
+            ->maxLength('apellido_paterno', 30)
             ->requirePresence('apellido_paterno', 'create')
             ->notEmptyString('apellido_paterno');
 
         $validator
             ->scalar('apellido_materno')
-            ->maxLength('apellido_materno', 25)
+            ->maxLength('apellido_materno', 30)
             ->requirePresence('apellido_materno', 'create')
             ->notEmptyString('apellido_materno');
 
@@ -173,6 +177,10 @@ class ClientesTable extends Table
             ->scalar('pagina_web')
             ->maxLength('pagina_web', 67)
             ->allowEmptyString('pagina_web');
+
+        $validator
+            ->integer('status')
+            ->allowEmptyString('status');
 
         return $validator;
     }

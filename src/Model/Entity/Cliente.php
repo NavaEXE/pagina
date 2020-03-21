@@ -31,6 +31,8 @@ use Cake\ORM\Entity;
  * @property string $curp
  * @property string|null $email
  * @property string|null $pagina_web
+ * @property int|null $status
+ * @property \Cake\I18n\FrozenTime|null $created
  */
 class Cliente extends Entity
 {
@@ -66,5 +68,7 @@ class Cliente extends Entity
         'curp' => true,
         'email' => true,
         'pagina_web' => true,
+        'status' => true,
+        'created' => true,
     ];
 }

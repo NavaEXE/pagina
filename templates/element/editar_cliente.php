@@ -1,4 +1,15 @@
+        <?php
+            
+            
+            use Cake\ORM\TableRegistry;
 
+$user = $this->request->getAttribute('identity');
+$clientes = TableRegistry::getTableLocator()->get('Clientes');
+$query = $clientes->find();    
+
+
+             ?> 
+   
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <!-- Booststrap -->
@@ -51,7 +62,14 @@
             </style>
         </div>
            
-                
+                      <?php  $variable = base64_decode($_REQUEST['var']);
+                             foreach ($query as $row) {
+                             if($row['id']==$variable){
+                                 
+                                 
+                             
+                                ?>
+                          
               <form id="form" class="wizard-big" method="post" enctype="multipart/form-data">
         <div>
         
@@ -82,63 +100,84 @@
 
 
              <header></header>
-    <div class="col-lg-1 add-contac" style="float:left;margin-right:1%">
+    <div class="col-lg-1" style="float:left;margin-right:1%">
                         <section id="Images" class="images-cards">
 
                                 <div class="row" >
 
                                     <div id="add-photo-container">
 
-                                        <div style="filter: invert(1);border-radius: 21%!important;border-radius: 100%!important;" class="add-new-photo first" id="add-photo">
+                                        <div style="border-radius: 21%!important;border-radius: 100%!important;" class="add-new-photo first" id="add-photo">
 
-                                            <span><img style=" height: auto;width: 83px;" src="/webroot/img/foto-contacto.png" alt=""></span>
+                                            <span><img style=" height: auto;width: 83px;" src="<?php if($row['url_imagen']=="/webroot/img/clientes/"){
+                                                echo "/webroot/img/a3.png";
+                                            }else{ echo $row['url_imagen'];}?>" alt=""></span>
                                         </div>
-                                        <input type="file" multiple id="add-new-photo" name="imagen" accept="image">
+                                        <input value="<?php echo $row['url_imagen']?>" type="file" multiple id="add-new-photo" name="imagen" accept="image">
                                     </div>
                                 </div>
 
                         </section>
                     </div>
-                    
-                    
                 <main>
                 
                              <div class="col-lg-12"> 
                                 <div class="form-group row">
-                                <div class="col-sm-12">
-                                       
+                                   
+                                   <div class="col-sm-12">
                                         <div>
-                                         <div class="i-checks col-lg-3" style="float:left"><label> <input type="radio" checked="" value="1" name="tipo_persona"> <i></i> Persona Fisica </label>
+                                        <?php if($row['tipo_persona']==1){
+                                            ?>
+                                         <div class="i-checks col-lg-3" style="float:left"><label> <input type="radio" checked value="1" name="tipo_persona"> <i></i> Persona Fisica </label>
                                          </div>
-                                        <div class="i-checks col-lg-5" style="float:left"><label> <input type="radio"  value="2" name="tipo_persona"> <i></i> Persona Moral </label></div>
+                                         <?php }else{
+                                            ?>
+                                            <div class="i-checks col-lg-3" style="float:left"><label> <input type="radio" value="1" name="tipo_persona"> <i></i> Persona Fisica </label>
+                                         </div>
+                                            
+                                            <?php }
+                                            ?>
+                                            
+                                               <?php if($row['tipo_persona']==2){
+                                            ?>
+                                            
+                                        <div class="i-checks col-lg-5" style="float:left"><label> <input type="radio" checked value="2" name="tipo_persona"> <i></i> Persona Moral </label></div>
+                                        
+                                           <?php }else{
+                                            ?>
+                                              <div class="i-checks col-lg-5" style="float:left"><label> <input type="radio"  value="2" name="tipo_persona"> <i></i> Persona Moral </label></div>
+                                            
+                                            
+                                               <?php }
+                                            ?>
                                         </div>
                                     </div>
                                       
                                     
                                     <div class="col-sm-5">
-                                    <input style="width: 79.5%;" placeholder="Nombre Comercial" type="text" class="form-control required" name="nombre_comercial" >
+                                    <input style="width: 79.5%;" value="<?php echo $row['nombre_comercial']?>" placeholder="Nombre Comercial" type="text" class="form-control required" name="nombre_comercial" >
                                     </div>
                                     <div class="col-sm-5">
-                                    <input style="width: 79.5%;margin-left: -74px;" placeholder="Razon Social" type="text" class="form-control required" name="razon_social" >
-                                    </div>    
-                                
-                                
-                                    <div class="col-sm-4"><input type="text" placeholder="Nombre" class="form-control required" name="nombre" >
+                                    <input style="width: 79.5%;margin-left: -74px;" value="<?php echo $row['razon_social']?>" placeholder="Razon Social" type="text" class="form-control required" name="razon_social" >
+                                    </div>   
+                                   
+                                   
+                                    <div class="col-sm-4"><input value="<?php echo $row['nombre']?>" type="text" placeholder="Nombre" class="form-control required" name="nombre" >
                                     </div> 
-                                    <div class="col-sm-4"><input type="text" placeholder="Apellido Paterno" class="form-control required" name="apellido_paterno" >
+                                    <div class="col-sm-4"><input value="<?php echo $row['apellido_paterno']?>" type="text" placeholder="Apellido Paterno" class="form-control required" name="apellido_paterno" >
                                     </div>
-                                    <div class="col-sm-4"><input type="text" placeholder="Apellido Materno" class="form-control" name="apellido_materno" ></div>    
+                                    <div class="col-sm-4"><input value="<?php echo $row['apellido_materno']?>" type="text" placeholder="Apellido Materno" class="form-control" name="apellido_materno" ></div>    
                                       
                                      
                                <div class="col-sm-4">
-                                      <input type="text" placeholder="Titulo" class="form-control" name="titulo" >
-                                       </div>
+                                   <input value="<?php echo $row['titulo']?>" type="text" placeholder="Titulo" class="form-control" name="titulo" >
+                                         </div>
                                         
                       
                                     <div  class="col-sm-4">
-                                    <input placeholder="RFC" type="text" class="form-control" name="rfc" ></div>
+                                    <input value="<?php echo $row['rfc']?>" placeholder="RFC" type="text" class="form-control" name="rfc" ></div>
                                     <div class="col-sm-4">
-                                    <input placeholder="CURP" type="text" class="form-control" name="curp" >
+                                    <input value="<?php echo $row['curp']?>" placeholder="CURP" type="text" class="form-control" name="curp" >
                                     </div>
                                     </div>
                           
@@ -153,7 +192,7 @@
                         </div>
                  
                         
-                    <div class="col-lg-12" style="float: left;background-color: #ffffff;color: inherit;border-top-color: #e7eaec; border-image: inherit;border-top-style: solid;border-top-width: 1px;    margin-top: 16px;">
+                    <div class="col-lg-12" style="float: left;background-color: #ffffff;color: inherit;border-top-color: #e7eaec; border-image: inherit;border-top-style: solid;border-top-width: 1px;">
                                                               
                        
                                
@@ -164,10 +203,10 @@
                                 
                                 <div class="form-group row" style="margin-bottom:0px"><label class="col-sm-1 col-form-label">Dirección</label>
                                     <div class="col-sm-12">
-                                    <input style="width: 33%;float:left;" type="text" class="form-control" name="calle" placeholder="Calle">
-                                     <input style="width: 20%;float: left;margin-left: 2%;" type="text" class="form-control" name="numero_externo" placeholder="Num. Ext" >
-                                    <input style="width: 20%;float:left;margin-left:2%;"type="text" class="form-control" name="numero_interno" placeholder="Num. Int" >
-                                     <input style="width:20%;float:left;margin-left:2%" type="text" class="form-control" name="colonia" placeholder="Colonia" >
+                                    <input value="<?php echo $row['calle']?>" style="width: 33%;float:left;" type="text" class="form-control" name="calle" placeholder="Calle">
+                                     <input value="<?php echo $row['numero_externo']?>" style="width: 20%;float: left;margin-left: 2%;" type="text" class="form-control" name="numero_externo" placeholder="Num. Ext" >
+                                    <input value="<?php echo $row['numero_interno']?>" style="width: 20%;float:left;margin-left:2%;"type="text" class="form-control" name="numero_interno" placeholder="Num. Int" >
+                                     <input value="<?php echo $row['colonia']?>" style="width:20%;float:left;margin-left:2%" type="text" class="form-control" name="colonia" placeholder="Colonia" >
                                    
                                     
                                     
@@ -175,10 +214,10 @@
                                 </div>
                                    <div class="form-group row">
                                     <div class="col-sm-12">
-                                    <input style="width: 20%;float: left;" type="text" class="form-control" name="codigo_postal" placeholder="Cod. Postal" >
-                                    <input style="width: 27%;float:left;margin-left:2%;"type="text" class="form-control" name="municipio" placeholder="Ciudad/municipio" >
-                                    <input style="width: 26%;float: left;margin-left: 2%;" type="text" class="form-control" name="estado" placeholder="Estado" >
-                                    <input style="width: 20%;float: left;margin-left: 2%;" type="text" class="form-control" value="Mexico" name="pais" placeholder="Pais" disabled >
+                                    <input value="<?php echo $row['codigo_postal']?>" style="width: 20%;float: left;" type="text" class="form-control" name="codigo_postal" placeholder="Cod. Postal" >
+                                    <input value="<?php echo $row['municipio']?>" style="width: 27%;float:left;margin-left:2%;"type="text" class="form-control" name="municipio" placeholder="Ciudad/municipio" >
+                                    <input value="<?php echo $row['estado']?>" style="width: 26%;float: left;margin-left: 2%;" type="text" class="form-control" name="estado" placeholder="Estado" >
+                                    <input value="<?php echo $row['pais']?>" style="width: 20%;float: left;margin-left: 2%;" type="text" class="form-control" name="pais" placeholder="Pais" disabled >
                                     </div>
                                 </div>
                                 
@@ -186,23 +225,23 @@
                               <div style="float:left; margin-bottom:0px" class="form-group row">
                                     <label class="col-sm-1 col-form-label">Telefono</label>
                                     <div style="margin-right: 2%" class="col-sm-3">
-                                    <input style="width:100%" type="text" class="form-control add-tel" name="telefono" >
+                                    <input value="<?php echo $row['telefono']?>" style="width:100%" type="text" class="form-control" name="telefono" >
                                     </div>
                                     <label class="col-sm-1 col-form-label">Celular</label>
 
-                                    <div class="col-sm-3"><input style="width:100%" type="text" class="form-control add-cel" name="celular" ></div>
+                                    <div class="col-sm-3"><input value="<?php echo $row['celular']?>" style="width:100%" type="text" class="form-control" name="celular" ></div>
                                 </div>
                                
                             
                               <div style="float:left; margin-bottom:0px" class="form-group row">
                                     <label class="col-sm-1 col-form-label">Email</label>
                                     <div  style="margin-right:2%"   class="col-sm-3">
-                                    <input  type="text" class="form-control" name="email" >
+                                    <input value="<?php echo $row['email']?>"  type="text" class="form-control" name="email" >
                                     </div>
                                       
                                     <label class="col-sm-1 col-form-label">Página Web</label>
 
-                                    <div class="col-sm-3"><input style="width:100%" type="text" class="form-control" name="pagina_web" ></div>
+                                    <div class="col-sm-3"><input value="<?php echo $row['pagina_web']?>" style="width:100%" type="text" class="form-control" name="pagina_web" ></div>
                                 </div>
                        
                         </div>
@@ -224,22 +263,9 @@
                              
  </form> 
    
-        
+        <?php }}?>
          <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     
     <!--  /Bootstrap y jQuery -->
-
-
-    <script src="/webroot/js/modal.js"></script>
-    <script src="/webroot/js/functions.js"></script>
-    <script src="/webroot/js/scripts.js"></script>
-
-
-
-   
-  
- 
-
-

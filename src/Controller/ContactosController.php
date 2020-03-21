@@ -52,7 +52,7 @@ class ContactosController extends AppController
      */
     public function contactos()
     {
-         $this->Authorization->skipAuthorization();
+        $this->Authorization->skipAuthorization();
         $contacto = $this->Contactos->newEmptyEntity();
  
         if ($this->request->is('post')) {
